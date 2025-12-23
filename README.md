@@ -1,6 +1,3 @@
-Oui 👍 le **contenu est bon**, le problème vient uniquement de **balises Markdown mal fermées / imbriquées**.
-Tu as deux erreurs classiques :
-
 ---
 
 ## ❌ Les problèmes principaux
