@@ -1,6 +1,43 @@
-
+Oui 👍 le **contenu est bon**, le problème vient uniquement de **balises Markdown mal fermées / imbriquées**.
+Tu as deux erreurs classiques :
 
 ---
+
+## ❌ Les problèmes principaux
+
+### 1️⃣ **Tu as entouré tout le README avec un bloc de code ```md**
+
+👉 Du coup **tout est interprété comme du code**, pas comme du Markdown.
+
+➡️ **Un README.md ne doit PAS être enfermé dans ```md**.
+
+---
+
+### 2️⃣ **Balises ``` ouvertes / fermées de façon incohérente**
+
+Exemples :
+
+* ``` fermé par ````
+* blocs `dans des blocs`
+* liens Markdown `[url](url)` placés dans des blocs de code (inutile)
+
+---
+
+## ✅ Règle simple à retenir
+
+* Le fichier **README.md entier** = Markdown naturel
+* Les ``` servent **uniquement** pour :
+
+  * code
+  * snippets
+  * exemples
+* Jamais de ```md englobant tout le fichier
+
+---
+
+## ✅ VERSION CORRIGÉE (100 % valide)
+
+👉 **Copie-colle TEL QUEL dans `README.md`**
 
 ```md
 # Common Assets
@@ -39,7 +76,7 @@ Format général :
 
 ```
 
-[https://cdn.jsdelivr.net/gh/tsurubaso/commonAssets@main/photos/image.jpg](https://cdn.jsdelivr.net/gh/tsurubaso/commonAssets@main/photos/image.jpg)
+[https://cdn.jsdelivr.net/gh/tsurubaso/common-assets@main/photos/image.jpg](https://cdn.jsdelivr.net/gh/tsurubaso/common-assets@main/photos/image.jpg)
 
 ````
 
@@ -49,7 +86,7 @@ Format général :
 
 ```html
 <img
-  src="https://cdn.jsdelivr.net/gh/tsurubaso/commonAssets@main/photos/image.jpg"
+  src="https://cdn.jsdelivr.net/gh/tsurubaso/common-assets@main/photos/image.jpg"
   alt="Image"
 />
 ````
@@ -78,7 +115,7 @@ Puis :
 
 ```jsx
 <Image
-  src="https://cdn.jsdelivr.net/gh/tsurubaso/commonAssets@main/photos/image.jpg"
+  src="https://cdn.jsdelivr.net/gh/tsurubaso/common-assets@main/photos/image.jpg"
   alt="Image"
   width={1200}
   height={800}
@@ -107,23 +144,18 @@ Recommandé :
 
 Assets centralisés = maintenance simple.
 
-```
+---
 
-````md
 ## 🔁 Optionnel — Centraliser l’URL des assets
 
 Pour faciliter la maintenance et les changements futurs, il est recommandé de centraliser l’URL de base des assets.
 
 ```js
 const ASSETS = "https://cdn.jsdelivr.net/gh/tsurubaso/common-assets@main";
-````
+```
 
 Puis l’utiliser partout :
 
 ```jsx
 <img src={`${ASSETS}/photos/image.jpg`} alt="Image" />
 ```
-
-
----
-
