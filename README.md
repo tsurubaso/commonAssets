@@ -1,7 +1,6 @@
 
 
-
-```md
+---
 # Common Assets
 
 Ce dépôt contient des **images partagées** (photos, illustrations, visuels UI) utilisées par plusieurs projets.
@@ -13,11 +12,9 @@ L’objectif est simple : **un seul endroit pour les assets**, sans duplication,
 ## 📁 Structure
 
 ```
-
 photos/
 illustrations/
 ui/
-
 ```
 
 Chaque dossier est librement organisé par projet ou par thème.
@@ -29,19 +26,15 @@ Chaque dossier est librement organisé par projet ou par thème.
 Format général :
 
 ```
-
 [https://cdn.jsdelivr.net/gh/](https://cdn.jsdelivr.net/gh/)<USER>/<REPO>@main/<PATH>
-
 ```
 
 ### Exemple
 
 ```
-
 [https://cdn.jsdelivr.net/gh/tsurubaso/common-assets@main/photos/image.jpg](https://cdn.jsdelivr.net/gh/tsurubaso/common-assets@main/photos/image.jpg)
 
 ````
-
 ---
 
 ## 🧩 HTML / React / Vite
@@ -121,3 +114,5 @@ Puis l’utiliser partout :
 ```jsx
 <img src={`${ASSETS}/photos/image.jpg`} alt="Image" />
 ```
+
+
