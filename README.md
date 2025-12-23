@@ -1,40 +1,5 @@
----
 
-## ❌ Les problèmes principaux
 
-### 1️⃣ **Tu as entouré tout le README avec un bloc de code ```md**
-
-👉 Du coup **tout est interprété comme du code**, pas comme du Markdown.
-
-➡️ **Un README.md ne doit PAS être enfermé dans ```md**.
-
----
-
-### 2️⃣ **Balises ``` ouvertes / fermées de façon incohérente**
-
-Exemples :
-
-* ``` fermé par ````
-* blocs `dans des blocs`
-* liens Markdown `[url](url)` placés dans des blocs de code (inutile)
-
----
-
-## ✅ Règle simple à retenir
-
-* Le fichier **README.md entier** = Markdown naturel
-* Les ``` servent **uniquement** pour :
-
-  * code
-  * snippets
-  * exemples
-* Jamais de ```md englobant tout le fichier
-
----
-
-## ✅ VERSION CORRIGÉE (100 % valide)
-
-👉 **Copie-colle TEL QUEL dans `README.md`**
 
 ```md
 # Common Assets
