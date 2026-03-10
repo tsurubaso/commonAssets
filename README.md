@@ -114,5 +114,5 @@ Puis l’utiliser partout :
 ```jsx
 <img src={`${ASSETS}/photos/image.jpg`} alt="Image" />
 ```
-
+integration fini
 
